@@ -67,10 +67,8 @@ class Hand:
             stuff += card.getSuit() + " "
         print("{0}: {1}".format(self.ID, stuff))
 
-    def __getitem__(self, index):
-        return self.hand[int[index]]
-
     def __len__(self):
+        'overrides length operator'
         return (len(self.hand))
 
     def __getitem__(self, index):
