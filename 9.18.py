@@ -79,7 +79,10 @@ class BMI(Frame):
         inter = weight * 703
         bmi = inter / pow(height,2)        
 
+        #shows result in new window and deletes fields from entry bars
         showinfo(message= bmi)
+        self.height.delete(0, END)
+        self.weight.delete(0, END)
 
 
 #instantiate Tk object
