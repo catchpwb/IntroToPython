@@ -50,9 +50,10 @@ class Textfile:
         'returns contents as a list of lines'
         print(self.textFile.split('\n'))
 
-    def grep(selfd):
+    def grep(self, target):
         """takes a target string as input and searches for lines in the text file that contain the target string. The method returns the lines
         in the file containing the target string; in addition, the method should print the line number, where line numbering starts with 0"""
+        
 
 'Open file'
 file = open("raven.txt")

@@ -29,7 +29,6 @@ Entry for user entering data
 END as glo0bal variable for end of string in Entry
 
 """
-import math
 from tkinter import Tk, Frame, Button, Entry, Label, END
 from tkinter.messagebox import showinfo
 
@@ -84,12 +83,15 @@ class BMI(Frame):
         self.height.delete(0, END)
         self.weight.delete(0, END)
 
-
-#instantiate Tk object
-root = Tk()
-#create BMI class object
-bmi = BMI(root)
-#placed at top boundary of root
-bmi.pack()
-#create window 
-root.mainloop()
+if __name__ == '__main__':
+    #avoids running code if module is imported
+    #add just in case
+    #instantiate Tk object
+    root = Tk()
+    #create BMI class object
+    bmi = BMI(root)
+    #placed at top boundary of root
+    bmi.pack()
+    #create window 
+    root.mainloop()
+    print("in main")
